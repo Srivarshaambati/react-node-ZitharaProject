@@ -14,7 +14,7 @@ const pool = new Pool({
 });
 
 router.use(json())
-/* GET home page. */
+
 router.get('/', async (req, res,next) => {
   try {
       const { page = 1, pageSize = 20, search = '', sort = 'sno' } = req.query;
