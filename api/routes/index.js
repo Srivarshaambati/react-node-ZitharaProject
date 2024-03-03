@@ -17,7 +17,7 @@ router.use(json())
 /* GET home page. */
 router.get('/', async (req, res,next) => {
   try {
-      const { page = 1, pageSize = 50, search = '', sort = 'sno' } = req.query;
+      const { page = 1, pageSize = 20, search = '', sort = 'sno' } = req.query;
       const offset = (page - 1) * pageSize;
 
       const filterCondition = `customer_name ILIKE '%${search}%' OR location ILIKE '%${search}%'`;
@@ -31,7 +31,7 @@ router.get('/', async (req, res,next) => {
           FROM customers
           WHERE ${filterCondition}
           ORDER BY ${sort}
-          
+          LIMIT ${pageSize}
       `;
 
       const result = await pool.query(dataQuery);
