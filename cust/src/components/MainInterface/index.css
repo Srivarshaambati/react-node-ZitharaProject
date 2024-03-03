@@ -1,0 +1,92 @@
+.tableHEad{
+    border: solid 1px grey;
+    
+}
+.main{
+    background-color: lightblue;
+    min-height: 100vh;
+    padding: 40px;
+}
+@media (width>776px){
+    .main{
+        padding-left:20vw;
+        padding-right:20vw;
+    }
+}
+.tableCont{
+    background-color: white;
+    
+    border-radius: 10px;
+    font-family: Roboto;
+    width: 100%;
+    padding: 10px;
+    
+ 
+}
+.searchCont{
+    
+    padding: 10px;
+    width: 20vw;
+    outline: none;
+    display: flex;
+    align-items: center;
+    height: 25px;
+
+}
+.inputval{
+    width: 100%;
+    height: 100%;
+    outline: none;
+    padding: 5px;
+    border: 1px;
+    border-left: none;
+}
+
+.imgg{
+    height: 100%;
+    background-color: white;
+    border: 1px;
+    border-right: none;
+   
+}
+.sele{
+    background-color: white;
+    font-family: Roboto;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+}
+table {
+        border-collapse: collapse;
+      }
+.sele{
+    width: 20vw;
+}
+
+.seachsortCont{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    justify-content: space-between;
+    
+}
+.labelsort{
+    margin-right: 10px;
+}
+.btn{
+    margin-right: 0px;
+}
+th{
+    text-align: center;
+    border: solid 1px black;
+    margin: 0px;
+    border-spacing: 0px;
+    padding: 10px;
+}
+td{
+    text-align: center;
+    border: solid 1px black;
+    padding: 10px;
+    
+}
